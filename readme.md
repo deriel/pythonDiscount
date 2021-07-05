@@ -14,6 +14,7 @@ After the environment is setup it can be found at http://localhost:8000/
 ## Getting a JWT token for testing out the API:
     TOKEN=$(pipenv run python3 api.py)
 Will give you a token for the default user for the default client, add user id to test claiming codes.
+
     curl \
     -H "Authorization: Bearer ${TOKEN}" \
     -H "Content-Type: application/json" \
